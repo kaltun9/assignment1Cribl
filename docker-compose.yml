@@ -1,0 +1,19 @@
+version: '3'
+
+#containers NodeJS container
+services: 
+  node-app: 
+  #path to docker file and it will build
+  build: . 
+  ports: 
+    - "9997:9997"
+
+volumes: 
+  - ./usr/src/app
+
+enviornment:
+  - PORT=9997
+
+
+
+    
