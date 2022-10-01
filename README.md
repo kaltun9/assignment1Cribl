@@ -1,6 +1,4 @@
 # assignment1Cribl
-
-
 Node.js app
 Running Locally
 Make sure you have Node.js and git installed
@@ -18,14 +16,11 @@ node app.js
 Running agent,splitter,target:
 node app.js <config_dir>
 
-
-
 Testing: JEST UNIT TESTING in file (test-app.js)
 I tested the functions in app.js in isolation is my app-test.js file. (The tests are not running with the applciation, However I documented my test cases to show my logic if I could get them to run)
 
 Installing JEST to run tests for app.js
 npm i jest
-
 
 
 Using Docker Compose with NodeJs
@@ -72,7 +67,6 @@ services:
       - "9997"
      #- type:bind
      # - target:
-
      #- read_only:false
 
 
