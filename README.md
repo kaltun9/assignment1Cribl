@@ -4,7 +4,8 @@
 Node.js app
 Running Locally
 Make sure you have Node.js and git installed
-git clone git@github.com:heroku/node-js-sample.git # or clone your own fork
+git clone 
+https://github.com/kaltun9/assignment1Cribl.git
 cd assignment1cribl
 npm install
 npm start
