@@ -4,8 +4,10 @@
 Node.js app
 Running Locally
 Make sure you have Node.js and git installed
+
 git clone 
-https://github.com/kaltun9/assignment1Cribl.git
+HTTPS: https://github.com/kaltun9/assignment1Cribl.git
+SSH: git@github.com:kaltun9/assignment1Cribl.git
 cd assignment1cribl
 npm install
 npm start
@@ -18,19 +20,20 @@ node app.js <config_dir>
 
 
 
-Testing: JEST UNIT TESTING 
-I tested the functions in app.js in isolation is my app-test.js file
+Testing: JEST UNIT TESTING in file (test-app.js)
+I tested the functions in app.js in isolation is my app-test.js file. (The tests are not running with the applciation, However I documented my test cases to show my logic if I could get them to run)
 
 Installing JEST to run tests for app.js
 npm i jest
 
+
+
 Using Docker Compose with NodeJs
 "Assignment offers docker container monitoring, either by running the Agent on the host or running in a container. 
+
 Dockerfile contents: 
 
 FROM node:16.17
- 
- 
 #Setting working directory so any later commands will be executed from here
 WORKDIR /Onedrive/Documents/github/assignment1cribl
 #Copy any files from root directory
@@ -45,6 +48,8 @@ RUN npm install
  
  
 CMD ["node", "/Onedrive/Documents/github/assignment1cribl/app.js"]
+
+
 
 Docker-compose contents:
 #version of docker compose
