@@ -1,18 +1,27 @@
-version: '3'
+#version of docker compose
+version: "3"
 
-#containers NodeJS container
+
 services: 
-  node-app: 
+  myapp:
+  image: myimage:latest
+  
+  container_name: myimagecont
+  hostname: splitter
+  init: true
+ # server: 
+  #  container_name: server
   #path to docker file and it will build
-  build: . 
+  #build: .
+ # dockerfile: Dockerfile
   ports: 
-    - "9997:9997"
+   - "9997:9997"
+  expose:
+    - "9997"
 
-volumes: 
-  - ./usr/src/app
 
-enviornment:
-  - PORT=9997
+
+   
 
 
 
