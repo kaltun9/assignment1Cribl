@@ -3,20 +3,23 @@ version: "3"
  
 services:
   assignment:
-      image: purpleimage:latest
-      container_name: assignmentcontainer
-      hostname: localhost
+   image: blueimage:latest
+ 
+      container_name: bluecontainer
+        
+      hostname:
       init: true
+      server:
+      container_name: server
       #path to docker file and it will build
       #build: .
       # dockerfile: Dockerfile
       ports:
       - "9997:9997"
-      volumes:
-      - .\Users\kaltu\OneDrive\Documents\github\assignment1Cribl
       expose:
       - "9997"
+    #volumes:
+   # - .\Users\kaltu\OneDrive\Documents\github\assignment1Cribl
      #- type:bind
      # - target:
-     
      #- read_only:false
